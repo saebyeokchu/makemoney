@@ -1,14 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://realpython.github.io/fake-jobs/"
+URL = "https://www.hankyung.com/"
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, "html.parser")
-results = soup.find(id="ResultsContainer")
 
-job_elements = results.find_all("div",class_="card-content")
+#위쪽 주제들
+results = soup.find("div",class_="main-top-wrap")
 
-python_jobs = results.find_all(
-    "h2", string=lambda text:"python" in text.lower()    
-)
+#많은 타이틀이 news-tit아래 태그로 씌워져 있음
+tits = results.find_all("h2",class_="news-tit");
+
+for tit in tits:
+    txt = tit.find("a").text
+    print(txt)
