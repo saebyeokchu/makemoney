@@ -2,26 +2,10 @@ import os
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
+import ToTextFile
 
 txts = []
 
-
-
-def printToText():
-    global txts
-    
-    fileName = datetime.now().strftime("%Y_%m_%dT%H_%M_%S")
-    print(fileName)
-    
-    fileFullPath = f'C:/Users/cuu22/Desktop/private/{fileName}.txt'
-    print(fileFullPath)
-    
-    #txt 모아서 파일로 만들기
-    with open(fileFullPath, "w",encoding='UTF-8') as f:
-        for txt in txts:
-            print(txt)
-            f.write(f"{txt}\n")
-            
 def extractTxts(source) :
     global txts
     
@@ -98,6 +82,6 @@ naver()
 
 
 #텍스트 파일로 추출한다
-printToText()
+ToTextFile.printToText()
 
     
