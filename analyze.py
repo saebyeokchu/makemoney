@@ -76,6 +76,9 @@ def naver() :
     for tit in results:
         txt = tit.find("a")
         txts.append(txt['title'])
+        
+def naverCurrentCurrency() :
+    
 
 hankyong()
 naver()
