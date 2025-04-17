@@ -1,8 +1,3 @@
-Thanks for the clarification! Based on your update, here's a new and accurate `README.md` tailored for your [`makemoney`](https://github.com/saebyeokchu/makemoney) project — a web-scraping and ETF-decision support tool using economic signals:
-
----
-
-```markdown
 # 💸 MakeMoney
 
 **MakeMoney** is an automated economic signal collector and ETF decision assistant.  
