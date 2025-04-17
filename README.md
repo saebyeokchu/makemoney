@@ -116,7 +116,3 @@ MIT License
 Developed by [@saebyeokchu](https://github.com/saebyeokchu) 🌅  
 Focused on building accessible, explainable financial tools.
 ```
-
----
-
-Let me know if you want to include **example ETF names**, **sample sources (e.g., KOSIS, Investing.com, FRED)**, or if you're planning to hook this into a front-end or Telegram bot — I can add sections for that too.
